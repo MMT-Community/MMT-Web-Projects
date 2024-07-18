@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--
+            we use (link) for a lot of things [page icon - link css - etc...]
+            to use it as a css link you have to add (rel) attribute with value of "stylesheet"
+        -->
+        <link rel="stylesheet" href="./styles/style.css" />
+        <title>Project</title>
+    </head>
+    <body>
+        <!-- every page should have 3 sections [Header - (main - body - hero section) - Footer] -->
+        <!-- 
+            header is the top of the page where you find [logo - links - search - etc...]
+        -->
+        <header>
+            <!--
+                logo is usually in the center or the left side of header
+                use (img) tag for logo
+            -->
+            <div class="logo-container">
+                <img src="./public/assets/logo.png" alt="logo" />
+            </div>
+            <!--
+                header might have navigation bar
+                navigation bar usually have links to other pages
+                use (nav) tag for navigation bar
+            -->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!--
+                main section or as some people say "Hero Section"
+                it contain all the page sections [landing - content - etc...]
+            -->
+            <section class="landing">
+                <section class="model-image">
+                    <div class="img-container">
+                        <img src="./public/assets/model.png" alt="model" />
+                    </div>
+                </section>
+                <section class="content-container">
+                    <!--
+                    content section usually contain text and images
+                    use (h1, h2, h3, h4, h5, h6) tags for headings
+                    use (p) tag for paragraphs
+                    use (img) tag for images
+                -->
+                    <h1>Welcome to Our Website!</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed vel mauris vel neque pulvinar varius. Sed euismod,
+                        mi vitae fermentum lobortis, mauris nunc laoreet velit,
+                        vitae tincidunt enim felis et felis.
+                    </p>
+                    <p>
+                        Nullam convallis, erat vel sagittis lobortis, est risus
+                        dignissim velit, vel vestibulum urna ligula et felis.
+                        Donec nec ex vitae massa fermentum consectetur.
+                    </p>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <!-- 
+                last and not least the Footer Section
+                it contain some information about the website, logo, links and much more
+            -->
+            <h1>Footer Section</h1>
+        </footer>
+
+        <!-- now let's move into css -->
+    </body>
+</html>

@@ -1,0 +1,90 @@
+/* 
+    to style an element you have to select it first
+    we got bunch of selectors [tag - id - class - child - * - etc...]
+    
+    you can select an element by calling its name "example" but keep in mind you will select everything wth this tag
+
+    with id you just use (#) before your element name "#example"
+
+    with class you just use (.) before your element name ".example"
+
+    child selector is that you select the child by calling it's parent element ".parent #child"
+
+    * means select all elements and it's called (the universal selector)
+*/
+
+/* 
+    we select [* - html - body] to make sure every thing will be defaulted with 0
+*/
+*,
+html,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #122;
+    font-size: 1.1rem;
+    font-family: tahoma;
+    color: white;
+    min-height: 100vh;
+
+    li{list-style-type: none;}
+    a{
+        color:white;
+        text-decoration:none;
+        transition: color .4s ease;
+        &:hover{color:#cac7c7;}
+    }
+    /* we select the header tag in the body tag as it's a child of the body */
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 2.5rem;
+        align-items: center;
+
+
+        .logo-container img{
+            border-radius: 50%;
+            aspect-ratio: 4/3.5;
+            width: 4rem;
+        }
+
+        nav ul{
+            display: flex;
+            gap: 1rem;
+        }
+
+
+
+    }
+
+    main{
+        .landing{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+            margin: 2rem 5rem;
+            min-height: 80vh;
+            .model-image .img-container img{
+                width: 20rem;
+            }
+            .content-container{
+                p{
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #222;
+        color: white;
+        min-height: 10rem;
+    }
+}

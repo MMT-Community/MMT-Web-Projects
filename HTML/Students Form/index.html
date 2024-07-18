@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+    </head>
+    <body>
+        <center>
+            <!-- 
+            action is the URL where the form data will be sent when submitted
+            method is the HTTP method that should be used to send the form data (GET, POST)
+        -->
+            <form action="" method="">
+                <table border="1">
+                    <caption>
+                        <h1>Students Form</h1>
+                    </caption>
+                    <thead>
+                        <th>
+                            <!-- 
+                            we use (for) to attach this label with that input
+                        -->
+                            <label for="name">Name</label>
+                        </th>
+                        <th><label for="country">Country</label></th>
+                        <th><label for="age">Age</label></th>
+                        <th><label for="job">Job</label></th>
+                    </thead>
+                    <tbody>
+                        <td>
+                            <!-- 
+                            type is what the input for (Category)
+                            id is used to make this input unique
+                            name is used to reference this input data in the Back-End
+                            placeholder is what will be shown in the input field when it's empty
+                            required means that this field is mandatory for the form to be submitted
+                            title is a popup that describe this field
+                        -->
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Name"
+                                required
+                                title="Name"
+                            />
+                        </td>
+                        <td>
+                            <input
+                                type="text"
+                                id="country"
+                                name="country"
+                                placeholder="Country"
+                                required
+                                title="Country"
+                            />
+                        </td>
+                        <td>
+                            <input
+                                type="number"
+                                id="age"
+                                name="age"
+                                placeholder="Age"
+                                required
+                                title="age"
+                            />
+                        </td>
+                        <td>
+                            <input
+                                type="text"
+                                id="job"
+                                name="job"
+                                placeholder="Job"
+                                required
+                                title="Job"
+                            />
+                        </td>
+                    </tbody>
+                    <tfoot>
+                        <!--
+                    we use "submit" type to send data to the server
+                -->
+                        <tr>
+                            <td colspan="4">
+                                <input
+                                    style="width: 100%"
+                                    type="submit"
+                                    value="Submit"
+                                />
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </form>
+        </center>
+    </body>
+</html>
