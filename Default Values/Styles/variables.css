@@ -1,0 +1,12 @@
+:root {
+    --main-bg-color: #122;
+    --gap: 1rem;
+    --font-size: 1.1rem;
+    --margin: 1.25rem 2.5rem;
+    --color: white;
+    --font: Tahoma, arial, helvetica, sans-serif;
+    --weighted-font: 600;
+    --semi-black-color: #232323;
+    --off-white: #cdcdcd;
+    --on-white: #ededed;
+}

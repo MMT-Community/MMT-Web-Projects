@@ -1,9 +1,12 @@
+@import url("/Default Values/Styles/variables.css");
+
 body {
     margin: 0;
     padding: 0;
-    background: #232323;
-    color: #cdcdcd;
-    font-family: "Avenir Next", "Avenir", sans-serif;
+    background: var(--main-bg-color);
+    color: var(--off-white);
+    font-family: var(--font);
+    overflow: hidden;
 }
 
 #menuToggle {
@@ -13,14 +16,11 @@ body {
     left: 50px;
 
     z-index: 1;
-
-    -webkit-user-select: none;
-    user-select: none;
 }
 
 #menuToggle a {
     text-decoration: none;
-    color: #232323;
+    color: var(--semi-black-color);
 
     transition: color 0.3s ease;
 }
@@ -51,7 +51,7 @@ body {
     margin-bottom: 5px;
     position: relative;
 
-    background: #cdcdcd;
+    background: var(--off-white);
     border-radius: 3px;
 
     z-index: 1;
@@ -74,7 +74,7 @@ body {
 #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: var(--on-white);
 }
 
 /* But let's hide the middle one. */
@@ -95,11 +95,11 @@ body {
 #menu {
     position: absolute;
     width: 300px;
-    margin: -100px 0 0 -50px;
+    /* margin: -100px 0 0 -50px; */
     padding: 50px;
     padding-top: 125px;
 
-    background: #ededed;
+    background: var(--on-white);
     list-style-type: none;
     /* -webkit-font-smoothing: antialiased; */
     /* to stop flickering of text in safari */
@@ -112,9 +112,17 @@ body {
 
 #menu li {
     padding: 10px 0;
-    font-size: 22px;
+    font-size: calc(var(--font-size) + 0.2rem);
+    font-weight: var(--weighted-font);
+}
+#menu #more {
+    color: lightgreen;
+    transition: color 0.4s ease;
 }
 
+#menu #more:hover {
+    color: lightblue;
+}
 /* And let's slide it in from the left */
 #menuToggle input:checked ~ ul {
     transform: none;
